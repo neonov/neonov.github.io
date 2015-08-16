@@ -68,7 +68,7 @@ for (i = 0; i < 3; i++) {
 
 var askUser = function(responses) {
   var population;
-  name = window.prompt('Enter name of continet, country or city of which population you want to know', 'Europe');
+  name = window.prompt('Enter name of continet, country or city of which population you want to know', 'Africa');
 
   population = getPopulation(name);
   printPopulation(name, population);
