@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>example</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="wrap-all">
+    <div class="main">
+      <form class="dropZone"></form>
+      <div class="player">
+        <canvas class="canvas"></canvas>
+        <div class="controls">
+          <div class="play-pause">
+            <div class="icon icon-play"></div>
+          </div>
+          <div class="timer">00:00</div>
+          <div class="track-wrap">
+            <div class="track">
+              <div class="track__progress"></div>
+            </div>
+          </div>
+          <div class="audio-duration">00:00</div>
+          <div class="volume">
+            <div class="volume__ctrl">
+              <div class="volume__track">
+                <div class="volume__progress"></div>
+              </div>
+            </div>
+            <div class="volume__btn">
+              <div class="icon icon-volume-up"></div>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="settings__btn">
+              <div class="icon icon-gear"></div>
+            </div>
+            <div class="settings__ctrl">
+              <ul class="tabs">
+                <li class="tabs__item active"><a href="#equalizer">Equalizer</a></li>
+                <li class="tabs__item"><a href="#vizualization">Vizualization</a></li>
+              </ul>
+              <ul class="content">
+                <li class="content__item active equalizer">
+                  <div class="equalizer__inputs">
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="70"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="180"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="320"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="600"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="1k"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="3k"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="6k"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="12k"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="14k"/>
+                    <input min="-12" max="12" step="0.1" value="0" type="range" title="16k"/>
+                  </div>
+                  <ul class="equalizer__presets">
+                    <li class="equalizer__presets-item active"><a href="#normal">normal</a></li>
+                    <li class="equalizer__presets-item"><a href="#pop">pop</a></li>
+                    <li class="equalizer__presets-item"><a href="#rock">rock</a></li>
+                    <li class="equalizer__presets-item"><a href="#jazz">jazz</a></li>
+                    <li class="equalizer__presets-item"><a href="#classic">classic</a></li>
+                  </ul>
+                </li>
+                <li class="content__item vizualization">
+                  <div data-viz="spectrum" class="vizualization__item active">
+                    <div class="vizualization__icon">
+                      <div class="icon icon-align-left icon-rotate-270"></div>
+                    </div>
+                    <div class="vizualization__text">Spectrum</div>
+                  </div>
+                  <div data-viz="time" class="vizualization__item">
+                    <div class="vizualization__icon">
+                      <div class="icon icon-heartbeat"></div>
+                    </div>
+                    <div class="vizualization__text">Waveform</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="add">
+            <div class="icon icon-folder-open"></div>
+            <input id="audio_file" type="file" accept="audio/*"/>
+          </div>
+        </div>
+        <div class="name">Пока ничего не проигрывается</div>
+      </div>
+      <div class="alert">
+        <div class="alert__icon">
+          <div class="icon icon-file-audio-o"></div>
+        </div>
+        <div class="alert__text">Перенесите выбраный файл</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+</body>

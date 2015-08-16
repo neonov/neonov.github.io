@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <title>Information board of Airports</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="tittle-caption">Расписание самолетов</div>
+    <input type="checkbox" id="departure" checked>
+    <label for="departure">Вылет</label>
+    <input type="checkbox" id="arrival" checked>
+    <label for="arrival">Прибытие</label>
+    <table class="table">
+      <thead class="table__header table__header_scroll">
+        <tr>
+          <th class="type">Тип <br>рейса</th>
+          <th class="time">Время <br>(MSK)</th>
+          <th class="flight-number">Рейс</th>
+          <th class="direction">Направление</th>
+          <th class="company">Авиакомпания</th>
+          <th class="type-airbus">Тип самолета</th>
+          <th class="type-airbus-min">Тип <br>самолета</th>
+          <th class="status">Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:05</td>
+        <td class="flight-number">S7 048</td>
+        <td class="direction">Москва (DME)</td>
+        <td class="company">
+          <div class="company__name">S7</div>
+          <div class="company__logo s7-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">A319 </td>
+        <td class="status end">Посадка закончена</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:30</td>
+        <td class="flight-number">7R 549</td>
+        <td class="direction">Воронеж</td>
+        <td class="company">
+          <div class="company__name">Руслайн</div>
+          <div class="company__logo rus-logo"></div>
+        </td>
+        <td class="type-airbus">Bombardier CRJ 2</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status go">Идет посадка</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">10:55</td>
+        <td class="flight-number">R2 5890</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Оренбургские Авиалинии</div>
+          <div class="company__logo or-av-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status go">Идет посадка</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">10:05</td>
+        <td class="flight-number">S7 048</td>
+        <td class="direction">Москва (DME)</td>
+        <td class="company">
+          <div class="company__name">S7</div>
+          <div class="company__logo s7-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">A319</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:30</td>
+        <td class="flight-number">7R 549</td>
+        <td class="direction">Воронеж</td>
+        <td class="company">
+          <div class="company__name">Руслайн</div>
+          <div class="company__logo rus-logo"></div>
+        </td>
+        <td class="type-airbus">Bombardier CRJ 2</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:55</td>
+        <td class="flight-number">R2 5890</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Оренбургские Авиалинии</div>
+          <div class="company__logo or-av-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status cancel">Отменен</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:05</td>
+        <td class="flight-number">S7 048</td>
+        <td class="direction">Москва (DME)</td>
+        <td class="company">
+          <div class="company__name">S7</div>
+          <div class="company__logo s7-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">A319</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:30</td>
+        <td class="flight-number">7R 549</td>
+        <td class="direction">Воронеж</td>
+        <td class="company">
+          <div class="company__name">Руслайн</div>
+          <div class="company__logo rus-logo"></div>
+        </td>
+        <td class="type-airbus">Bombardier CRJ 2</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">10:55</td>
+        <td class="flight-number">R2 5890</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Оренбургские Авиалинии</div>
+          <div class="company__logo or-av-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="arrival">
+        <td class="type">Прилет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:05</td>
+        <td class="flight-number">S7 048</td>
+        <td class="direction">Москва (DME)</td>
+        <td class="company">
+          <div class="company__name">S7</div>
+          <div class="company__logo s7-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">A319</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:30</td>
+        <td class="flight-number">7R 549</td>
+        <td class="direction">Воронеж</td>
+        <td class="company">
+          <div class="company__name">Руслайн</div>
+          <div class="company__logo rus-logo"></div>
+        </td>
+        <td class="type-airbus">Bombardier CRJ 2</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">10:55</td>
+        <td class="flight-number">R2 5890</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Оренбургские Авиалинии</div>
+          <div class="company__logo or-av-logo"></div>
+        </td>
+        <td class="type-airbus">Airbus 319</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:15</td>
+        <td class="flight-number">U6 551</td>
+        <td class="direction">Челябинск</td>
+        <td class="company">
+          <div class="company__name">Аэрофлот</div>
+          <div class="company__logo aer-logo"></div>
+        </td>
+        <td class="type-airbus">Embraer ERJ 145</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:30</td>
+        <td class="flight-number">YC 511</td>
+        <td class="direction">Симферополь</td>
+        <td class="company">
+          <div class="company__name">Ямал</div>
+          <div class="company__logo yam-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-300</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      <tr class="departure">
+        <td class="type">Вылет</td>
+        <td class="time">11:35</td>
+        <td class="flight-number">BT 443</td>
+        <td class="direction">Рига</td>
+        <td class="company">
+          <div class="company__name">Air Baltic</div>
+          <div class="company__logo air-baltic-logo"></div>
+        </td>
+        <td class="type-airbus">Boeing 767-500</td>
+        <td class="type-airbus-min">B765</td>
+        <td class="status">Регистрация</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
