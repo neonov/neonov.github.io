@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Climate of </title>
+  <link rel="stylesheet" href="lib/css/scrollyeah.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap-all">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-wrap">
+          <li><a class="nav__item active">Москва</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <section class="change">
+      <p>В последние десятилетия, особенно с 1970-х годов климат городов становится теплее, растет среднегодовая температура. Причинами этого процесса могут быть, как глобальное потепление, так и естественная цикличность климата, а также продолжающийся рост города (увеличение численности населения, количества автомобилей и т. д.).</p>
+      <div class="trend">
+        <h4>Изменения климата</h4>
+          <p>Изменяя промежуток времени вы можете увидеть усреднеенную температуру месяца за этот период. Например можно посмотреть климат конца XIX <a class="climat1">1879-1899 гг.</a> Тогда март был ненамного теплей, а в некоторых городах холодней, среднего января XXI века <a class="climat2">2000—2014 гг.</a></p>
+        <div class="trend__svg"></div>
+        <div class="trend__sign">
+          <p>Среднегодовая температура воздуха</p>
+        </div>
+      </div>
+      <div class="av-max-min_2">
+        <p class="sign-start">«Свежие» климатические нормы 1981-2010 гг.</p>
+        <p class="hide sign-period">Климат за <span class="start">1981</span><span class="dash"> — </span><span class="end">2010</span><span class="year"> гг.</span></p>
+        <div class="av-max-min_2__svg"></div>
+        <div class="av-max-min_2__sign">
+          <p>Усредненная температура за период, °C</p>
+        </div>
+      </div>
+    </section>
+    <section class="heatmap">
+      <p> На этой «тепловой карте» можно посмотреть тенденцию изменения среднемесячных температур в течении десятилетий</p>
+      <p></p>
+      <div class="heatmap__svg-wrap">
+        <div class="heatmap__svg"></div>
+      </div>
+      <div class="heatmap__sign">Среднемесячные температуры</div>
+    </section>
+  </div>
+  <script src="lib/js/jquery.min.js"></script>
+  <script src="lib/js/d3.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
