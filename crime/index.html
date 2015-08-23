@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hi</title>
+  <link rel="stylesheet" href="lib/css/dc.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap-all">
+    <header class="header">
+      <h1>Где в России всем страшнее</h1>
+      <p>статистика преступности в стране по субъектам на 100 000 человек населения за 2013 г.</p>
+    </header>
+    <hr>
+    <main class="main">
+      <div class="description">
+        <p>Эта визуальное представление информации о состоянии преступности в регионах РФ на 2013 г. Используемые данные позволяют ответить на ряд вопросов: выяснить какой самый креминогенный регион, узнать количество регионов по разным уровням преступности — от очень низкого до очень высокого и другое.</p>
+      </div>
+      <section class="map">
+        <div class="map__svg">
+          <h4>Карта РФ по уровню преступности<span><a style="display: none;" class="reset">сброс</a></span></h4>
+          <div class="select-regions"><span>Выбранно субъектов: </span><span class="select-regions__svg"></span></div>
+          <div class="aver-crime"><span>Средее чило преступлений: </span><span class="aver-crime__svg"></span></div>
+        </div>
+        <div class="cities"></div>
+        <div class="levels__svg"></div>
+      </section>
+      <section class="district">
+        <div class="district__svg">
+          <p>Ниже можно выбрать федеральный округ и посмотреть данные о субъектах входящих в него. Зависимость дана от количества субъектов в федеральном округе. Также, например, выбрав уровень преступности регионов можно посмотреть их количество в федеральных округах</p>
+          <h4>Федеральные округа по количеству регионов<span><a style="display: none;" class="reset">сброс</a></span></h4>
+        </div>
+      </section>
+    </main>
+    <aside class="aside">
+      <section class="regions">
+        <div class="regions__svg">
+          <h4>Субъекты РФ<span><a style="display: none;" class="reset">сброс</a></span></h4>
+          <ul class="controls"><span class="controls__header">Сортировать по:</span>
+            <li class="controls__btn-wrap active"><a href="#alfabetical" class="controls__btn">алфавиту</a></li>
+            <li class="controls__btn-wrap"><a href="#ascending" class="controls__btn">возрастанию</a></li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="lib/js/jquery.min.js"></script>
+  <script src="lib/js/d3.js"></script>
+  <script src="lib/js/queue.min.js"></script>
+  <script src="lib/js/crossfilter.js"></script>
+  <script src="lib/js/dc.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
