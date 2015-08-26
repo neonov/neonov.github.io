@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app"></html>
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-route.min.js"></script>
+  <script src="js/vendor/angular-animate.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/all.min.js"></script>
+</head>
+<body>
+  <div class="wrap-all">
+    <header>
+      <h2 class="logo">Книга домашних рецептов</h2>
+    </header>
+    <main class="content">
+      <aside class="aside">
+        <div class="search">
+          <div class="search__field">
+            <input placeholder="поиск по названию" ng-model="query.name">
+          </div>
+        </div>
+        <div class="type"><span>тип рецепта</span>
+          <select ng-model="query.kitchenType" title="Stars" class="form-control">
+            <option value="">все</option>
+            <option>рецепты на каждый день</option>
+            <option>праздничный стол</option>
+            <option>рецепты для мультиварки</option>
+          </select>
+        </div>
+        <div class="new">
+          <input type="checkbox" id="checkbox" ng-model="query.new" ng-true-value="1" ng-false-value="undefined" class="checkbox">
+          <label for="checkbox">Только новые</label>
+        </div>
+      </aside>
+      <section ng-controller="RecipesListCtrl" class="main">
+        <div class="recipes-list">
+          <ul class="list">
+            <li ng-repeat="recipe in recipes | filter:query" ng-click="onClickItem(recipe)" ng-class="{active:isActiveItem(recipe.alias)}" class="one recipe-listing"><a href="#/recipes/{{recipe.alias}}">
+                <div class="image"><img ng-src="{{recipe.image_bigthumbnail}}"></div>
+                <div class="describe">
+                  <h4>{{recipe.name}}</h4>
+                  <p>тип: <span>{{recipe.kitchenType}}</span></p>
+                  <p>сложность: <span>{{recipe.complexityType}}</span></p>
+                  <p>время: <span>{{recipe.time}}</span></p>
+                </div></a></li>
+          </ul>
+        </div>
+        <div ng-view class="recipe-detail"></div>
+      </section>
+    </main>
+  </div>
+</body>

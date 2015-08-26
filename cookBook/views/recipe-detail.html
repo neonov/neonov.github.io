@@ -1,0 +1,8 @@
+
+<h2>{{currenRecipe.name}}</h2><img ng-src="{{currenRecipe.image_bigthumbnail}}"/>
+<h4>Ингридиенты</h4>
+<ul>
+  <li ng-repeat="li in currenRecipe.ingridients">{{ li }}</li>
+</ul>
+<h4>Рецепт</h4>
+<p ng-repeat="p in currenRecipe.recipe">{{ p }}</p>
