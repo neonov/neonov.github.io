@@ -325,6 +325,9 @@ ul {
 .recipes-list ul li.active a {
   background: #bbb;
 }
+.recipes-list ul li:hover a {
+  background: #ccc;
+}
 .recipes-list .image {
   float: left;
   width: 130px;

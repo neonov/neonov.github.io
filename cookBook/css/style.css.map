@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["style.styl"],"sourcesContent":["@import 'nib'\r\n@import 'variables/*.styl'\r\n@import 'settings/normalize'\r\n@import 'settings/settings'\r\n@import 'partial/*.styl'\r\n\r\n\r\nbody\r\n  background #eee \r\n\r\n.wrap-all\r\n  cf()\r\n  width 1250px\r\n  margin 0 auto\r\n"],"file":"style.css","sourceRoot":"/source/"}
