@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Hangman</title>
-        <!--<base href="/">-->
+        <base href="/">
     <link href="./app.807ebfeb1e074101d80c.css" rel="stylesheet"></head>
     <body>
         <div ui-view></div>
