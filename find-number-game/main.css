@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+}
+
+#input {
+    margin-bottom: 20px;
+    font-size: 36px;
+    width: 100px;
+}
+
+#button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#button[disabled] {
+    background-color: #378945;
+}
+#button:focus {
+    outline: none;
+}
+
+#button:active {
+    background-color: #378945;
+}
+
+.wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#description {
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 50px;
+    max-width: 350px;
+}
